@@ -1,0 +1,27 @@
+{
+  "name": "viewport-detection",
+  "version": "0.0.0",
+  "authors": [
+    "Adrian Stainforth <adrian@morsedigtial.com>"
+  ],
+  "description": "Angular service to manage viewport detection",
+  "main": "dist/viewport-detection.js",
+  "keywords": [
+    "Cookiebar",
+    "Angular"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/djforth/viewport-detection",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.x",
+    "angular-mocks": "~1.2.x"
+  }
+}
