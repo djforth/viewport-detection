@@ -4,7 +4,7 @@ var gutil  = require('gulp-util');
 var rename = require("gulp-rename");
 
 gulp.task("npm_build", function () {
-  return gulp.src("lib/cookiebar.coffee")
+  return gulp.src("lib/viewport_detector.coffee")
     .pipe(coffee({bare: true}).on('error', gutil.log))
     .pipe(rename("index.js"))
     .pipe(gulp.dest("./"));
