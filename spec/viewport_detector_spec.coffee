@@ -1,4 +1,4 @@
-require('../lib/viewport_detector.coffee')
+require('../src/viewport_detector.coffee')
 require 'angular-mocks'
 
 
