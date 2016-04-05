@@ -145,7 +145,7 @@ describe 'Resizer', ->
 
 
 
-  describe 'trackSize', ->
+  xdescribe 'trackSize', ->
     resizeFn = mockWindow = callback = null
     beforeEach ->
       spyOn(vdetect, "addCallback")

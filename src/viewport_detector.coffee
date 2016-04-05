@@ -1,7 +1,8 @@
 'use strict'
 require('angular')
 
-_ = require('lodash')
+_ = require('lodash/core');
+_.includes = require('lodash/includes');
 
 viewportDetection =  angular.module('$viewportDetection', [])
   .service('resizer', ["$rootScope","$window", ($rootScope, $window)->
@@ -13,7 +14,7 @@ viewportDetection =  angular.module('$viewportDetection', [])
     addCallback = (c)->
 
       throw(new Error("Not a function")) unless _.isFunction(c)
-      unless _.contains(callbacks, c)
+      unless _.includes(callbacks, c)
         # console.log "add callbacks", callbacks.length
         callbacks.push(c)
 
